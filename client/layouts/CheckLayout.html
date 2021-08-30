@@ -1,0 +1,28 @@
+<template name="Check">
+  <style media="screen">
+    /* canvas{
+      position:absolute;
+    } */
+    .canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* background-color:rgba(255,0,0,0.5); */
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <div class="container">
+    <video id="video" width="480" height="320" autoplay playsinline></video>
+    <canvas class="canvas1" id="cv1" width="480" height="320"></canvas>
+  </div>
+  <video id="video" width="480" height="320" autoplay playsinline></video>
+  <canvas id="canvas" width="480" height="320"></canvas>
+  <textarea id="textbox" rows="8" cols="80"></textarea>
+  <button class="auth">click</button>
+  <button class="start">start</button>
+  <button class="blur">blur</button>
+  <button class="background1">background</button>
+  <button class="pridict">check</button>
+  <input type="file" id="change-back">
+</template>
